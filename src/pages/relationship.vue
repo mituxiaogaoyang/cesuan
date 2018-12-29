@@ -52,6 +52,7 @@
 		</div>
 		
 		<div class="bot">
+			<a class="btn_share"><img src="../../static/imgs/portrait/share.png" alt=""></a>
 			<img src="../../static/imgs/relation/bot_box.png">
 			<div class="corner corner3"><img src="../../static/imgs/relation/corner.png"></div>
 			<div class="corner corner4"><img src="../../static/imgs/relation/corner.png"></div>
@@ -192,7 +193,9 @@
 						list.inuse = 1  //将选中的设置为1：在使用
 						this.bObj = {id:id,time:day,type:type,name:name,avatar:avatar}
 					}else if(this.aOrb == 'a'&&this.bObj.id===0){
-						ToastMe('请先确定另一个生日')
+						ToastMe('请先确定另一个生日') ;
+						this.personSelected = false
+						return 
 					}else{
 						let list1 = lists.find((obj)=>{
 							return obj.id === id
@@ -265,7 +268,7 @@
 		}
 		.relation{
 			position:absolute;
-			top:53%;
+			top:50%;
 			left:5%;
 			width:90%;
 			transform: translateY(-50%);
@@ -329,10 +332,10 @@
 				font-family: 'font1'; 
 				.words{
 					position:absolute;
-					left:26%;
-					width:48%;
+					left:24%;
+					width:52%;
 					text-align: center;
-					font-size: 28px;
+					font-size: 26px;
 					top:-15px;
 				}
 			}
@@ -349,21 +352,28 @@
 				width:76%;
 				left:12%;
 				.words{
-					top:auto;bottom:-15px;
+					top:auto;bottom:-8px;
 				}
 			}
 			.top4_box{
 				top:180%;
 				.words{
-					top:auto;bottom:-15px;
+					top:auto;bottom:-8px;
 				}
 			}
 		}
+		
 		.bot{
 			position: absolute;
 			bottom: 0;
 			left:0;
 			width:100%;
+			.btn_share{
+				position: absolute;
+				bottom:130%;
+				width:32vw;
+				left:34vw;
+			}
 		}
 		.corner{
 			width:14vw;
