@@ -1,0 +1,30 @@
+// 本地存储灵符列表相关数据
+const arrLocal = [
+	{id:1001,name:'平安符',icon:'../../../static/imgs/signs/lists/pinganfu.png',
+		pic:[]},
+	{id:1002,name:'转运符',icon:'../../../static/imgs/signs/lists/kaiyunfu.png',
+		pic:[]},
+	{id:1003,name:'健康符',icon:'../../../static/imgs/signs/lists/kaiyunfu.png',
+		pic:[]},	
+	{id:1004,name:'防小人符',icon:'../../../static/imgs/signs/lists/quxiefu.png',
+		pic:[]},
+	{id:1005,name:'贵人符',icon:'../../../static/imgs/signs/lists/qubingfu.png',
+		pic:[]},
+	{id:1006,name:'清净符',icon:'../../../static/imgs/signs/lists/fangshuinifu.png',
+		pic:[]},
+	{id:1007,name:'文昌符',icon:'../../../static/imgs/signs/lists/ouhuangfu.png',
+		pic:[]},
+	{id:1008,name:'消灾符',icon:'../../../static/imgs/signs/lists/kaoshifu.png',
+		pic:[]},
+	{id:2001,name:'防小人符',icon:'../../../static/imgs/signs/lists/fangxiaorenfu.png',
+		pic:[]},
+	{id:2002,name:'吃货符',icon:'../../../static/imgs/signs/lists/chihuofu.png',
+		pic:[]},
+	{id:2003,name:'防小人符',icon:'../../../static/imgs/signs/lists/fangxiaorenfu.png',
+		pic:[]},
+	{id:2004,name:'防小人符',icon:'../../../static/imgs/signs/lists/fangxiaorenfu.png',
+		pic:[]},
+	{id:2005,name:'防小人符',icon:'../../../static/imgs/signs/lists/fangxiaorenfu.png',
+		pic:[]}
+] ;
+export {arrLocal} ;
